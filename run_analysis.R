@@ -1,8 +1,9 @@
 if (!file.exists('data')) {dir.create('data')}
+if (!'tools' %in% installed.packages()) install.packages('tools') #check for library dependency
 fileUrl <- 'https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip'
 download.file(fileUrl,destfile="./data/dataset.zip",method="curl")
 dateDownloaded <- date()
-library(tools)
+library(tools) #for life_files_with_type and file_path functions to extract titles
 unzip('./data/dataset.zip', exdir = './data/')
 activity.labels <- read.table('./data/uci har dataset/activity_labels.txt', sep=' ',
                             col.names=c('index', 'activity'))
