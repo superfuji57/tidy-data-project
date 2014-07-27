@@ -23,23 +23,23 @@ Please see the readme.txt file in the zip for more details of the raw data set.
 The tidy data set is a reshaped table containing the averages of the mean and standard deviation features for each subject and activity. There are 180 observations (30 subjects performing 6 activities) and 66 feature columns. For example: the tidy data set allows us to look at average tBodyAcc-X recorded during subject N's sitting activity.
 
 Each measurement is a mean of the mean or standard deviation of the following measurements (3 for every XYZ variable):
-tBodyAcc-XYZ
-tGravityAcc-XYZ
-tBodyAccJerk-XYZ
-tBodyGyro-XYZ
-tBodyGyroJerk-XYZ
-tBodyAccMag
-tGravityAccMag
-tBodyAccJerkMag
-tBodyGyroMag
-tBodyGyroJerkMag
-fBodyAcc-XYZ
-fBodyAccJerk-XYZ
-fBodyGyro-XYZ
-fBodyAccMag
-fBodyAccJerkMag
-fBodyGyroMag
-fBodyGyroJerkMag
+* tBodyAcc-XYZ
+* tGravityAcc-XYZ
+* tBodyAccJerk-XYZ
+* tBodyGyro-XYZ
+* tBodyGyroJerk-XYZ
+* tBodyAccMag
+* tGravityAccMag
+* tBodyAccJerkMag
+* tBodyGyroMag
+* tBodyGyroJerkMag
+* fBodyAcc-XYZ
+* fBodyAccJerk-XYZ
+* fBodyGyro-XYZ
+* fBodyAccMag
+* fBodyAccJerkMag
+* fBodyGyroMag
+* fBodyGyroJerkMag
 
 
 NOTE: meanFreqs are exluded from the tidy data set as the requirments of the project state the mean of each mean measurement. I interpret a frequency mean as separate from the actual recorded data from the sensors.
