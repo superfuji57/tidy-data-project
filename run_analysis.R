@@ -1,5 +1,5 @@
 if (!file.exists('data')) {dir.create('data')}
-fileUrl <- https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+fileUrl <- 'https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip'
 download.file(fileUrl,destfile="./data/dataset.zip",method="curl")
 dateDownloaded <- date()
 library(tools)
@@ -43,4 +43,4 @@ m.X2 <- m.X2[,!grepl('Freq', names(m.X2))] #remove meanFreq variables
 tidy <- aggregate(m.X2[,1:66], by=list(subject=m.X2$subject, activty=m.X2$activity), 
                   FUN=mean, na.rm=TRUE)
 #export file as txt
-write.table(tidy, file='tidy.txt', sep='/t')
+write.table(tidy, file='tidy.txt', sep='\t')
