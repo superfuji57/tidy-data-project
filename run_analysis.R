@@ -45,3 +45,5 @@ tidy <- aggregate(m.X2[,1:66], by=list(subject=m.X2$subject, activty=m.X2$activi
                   FUN=mean, na.rm=TRUE)
 #export file as txt
 write.table(tidy, file='tidy.txt', sep='\t')
+cat('The tidy data set is now saved in tab-delimited format in the working directory as tidy.txt. 
+    \nYou can view the combined data frame in the ojbect m.X. m.X2 contains only mean std measurements')
