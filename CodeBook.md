@@ -4,7 +4,7 @@ Full description from the source of the data here: http://archive.ics.uci.edu/ml
 
 Download link: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
-## Brief description
+# Brief description
 
 These data are measurements recorded by smartphones during movement from the following activities: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING.
 
